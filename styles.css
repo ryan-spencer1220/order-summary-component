@@ -1,0 +1,274 @@
+:root {
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: url(./images/pattern-background-mobile.svg) no-repeat center/cover;
+  background-color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", serif;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--dark-blue);
+}
+
+#card {
+  background-color: white;
+  width: 350px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 9px 4px 73px -22px rgba(0, 0, 0, 0.27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 350px;
+}
+
+#music-img {
+  width: 50px;
+  height: auto;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+}
+
+#text-container > * {
+  margin: 14px 0px;
+}
+
+#plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--very-pale-blue);
+  border-radius: 20px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+#button-container > * {
+  all: unset;
+  font-weight: 700;
+}
+
+#description {
+  color: var(--desaturated-blue);
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+#price-container > * {
+  padding: 4px 0px;
+}
+
+#price {
+  color: var(--desaturated-blue);
+  font-size: 14px;
+}
+
+#payment {
+  background-color: var(--bright-blue);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 9px 4px 73px -22px rgba(0, 0, 0, 0.27);
+}
+
+#payment:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#cancel {
+  background-color: white;
+  color: var(--desaturated-blue);
+  padding: 14px;
+  border-radius: 10px;
+}
+
+#change {
+  text-decoration: none;
+}
+
+#cancel:hover {
+  cursor: pointer;
+}
+
+#change:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background: url(./images/pattern-background-desktop.svg) no-repeat center/cover;
+    background-color: var(--pale-blue);
+  }
+
+  #card {
+    width: 400px;
+    height: 625px;
+  }
+
+  #hero-img {
+    width: 400px;
+  }
+}
